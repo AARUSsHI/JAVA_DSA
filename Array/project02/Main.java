@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class Main {
 
-    public int[] removeEven(int[] arr){
+    public int[] removeEven(int[] arr) {
         int oddCount = 0;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i] % 2 != 0){
-                oddCount ++;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                oddCount++;
             }
         }
         int[] result = new int[oddCount];
 
         int idx = 0;
-        for(int i=0; i<arr.length; i++){
-            if(arr[i] % 2 != 0){
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
                 result[idx] = arr[i];
                 idx++;
             }
@@ -23,8 +23,8 @@ public class Main {
         return result;
     }
 
-    public void printArray(int[] arr){
-        for(int i=0; i<arr.length; i++){
+    public void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
@@ -37,7 +37,7 @@ public class Main {
         int length = input.nextInt();
         int[] myArr = new int[length];
         System.out.println("Enter the elements of array: ");
-        for(int i=0; i<length; i++){
+        for (int i = 0; i < length; i++) {
             myArr[i] = input.nextInt();
         }
         System.out.println("Printing orignal array: ");
