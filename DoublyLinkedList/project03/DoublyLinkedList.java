@@ -8,7 +8,7 @@ public class DoublyLinkedList {
     private ListNode tail;
     private int length;
 
-    private class ListNode {
+    public static class ListNode {
         private int data;
         private ListNode next;
         private ListNode previous;
