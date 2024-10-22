@@ -1,7 +1,5 @@
 package CircularSinglyLinkedList.project01;
 
-import java.util.NoSuchElementException;
-
 public class CircularSinglyLinkedList {
     private ListNode last;
     private int length;
@@ -73,7 +71,7 @@ public class CircularSinglyLinkedList {
         System.out.println("Length :- " + csll.length());
 
         CircularSinglyLinkedList csll1 = new CircularSinglyLinkedList();
-        System.out.println("Inserting nodes at the beginning");
+        System.out.println("Inserting nodes at the end");
         csll1.insertLast(11);
         csll1.insertLast(22);
         csll1.insertLast(33);
